@@ -1,9 +1,5 @@
 const app = require("./app");
 
-// const express = require("express"); // require express
-
-// const app = express();
-
 // sets the port our express server will be running on
 const port = process.env.PORT || 5000;
 
