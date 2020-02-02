@@ -3,7 +3,7 @@ const app = express();
 const fs = require("fs");
 const path = require("path");
 
-app.use(express.static(path.join(__dirname, "client/build")));
+app.use(express.static(path.join(__dirname, "client_new/build")));
 
 const seafood = JSON.parse(
   fs.readFileSync(`${__dirname}/dev-data/data/seafood.json`)
@@ -18,7 +18,7 @@ app.get("/seafood", (req, res) => {
 });
 
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname + "/client/build/index.html"));
+  res.sendFile(path.join(__dirname + "/client_new/build/index.html"));
 });
 
 module.exports = app;

@@ -1,0 +1,327 @@
+/* Original create-react-app CSS */
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  /* min-height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* My CSS */
+
+// Variables
+
+$lightblue: #54c4c2;
+$darkblue: #1a1b41;
+$lightsalmon: #f76959;
+$darksalmon: #f53722;
+
+// General styles
+
+.App {
+  text-align: center;
+  // height: 100vh;
+  position: relative;
+  min-height: 100vh;
+}
+
+body {
+  background-image: repeating-linear-gradient(
+    to bottom right,
+    $lightblue,
+    $darkblue
+  );
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.page-container {
+  padding-bottom: 6rem;
+}
+
+// Header
+
+#fishNavbar {
+  padding: 2rem 2rem 1rem 2rem;
+  @media only screen and (max-width: 768px) {
+    padding: 1rem;
+  }
+}
+
+.nav-link {
+  color: white;
+}
+
+.header-brand {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  font-weight: 900;
+  color: white;
+}
+
+#header-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 3rem;
+  font-weight: 700;
+  color: white;
+  @media only screen and (max-width: 768px) {
+    font-size: 2rem;
+  }
+}
+
+.nav-link-sub {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 1rem;
+  @media only screen and (max-width: 768px) {
+    font-size: 0.75rem;
+  }
+  a#about-link:hover {
+    color: white;
+  }
+}
+
+.nav-link-sub:hover {
+  color: white;
+}
+
+// .nav-link#header-title:hover {
+//   color: $darkblue;
+// }
+
+// Fish Selector
+
+.fish-selector {
+  color: $darkblue;
+}
+
+.intro-container {
+  width: 85%;
+  text-align: center;
+  border-color: black;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: white;
+  margin-bottom: 1.5rem;
+  color: $darkblue;
+  // border-radius: 100% 20% 100% 20% / 10% 96% 10% 96%;
+  border-radius: 10px 50px;
+  // box-shadow: 3px 3px 20px -10px;
+  box-shadow: 3px 1px 15px rgba(0, 0, 0, 0.7);
+  // @media only screen and (max-width: 768px) {
+  //   border-radius: 91% 9% 89% 11% / 3% 97% 3% 97%;
+  // }
+}
+
+.intro-headline {
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  // margin-bottom: 2rem;
+  padding: 3rem;
+  @media only screen and (max-width: 768px) {
+    font-size: 1.25rem;
+    padding: 2rem;
+    margin-bottom: 0rem;
+  }
+}
+
+.highlight-text {
+  color: $darksalmon;
+}
+
+.intro-text-top {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  padding: 0rem 3rem 1rem 3rem;
+  @media only screen and (max-width: 768px) {
+    padding: 0rem 2rem 2rem 2rem;
+  }
+}
+
+.intro-text-bottom {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-weight: 400;
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+  padding: 0rem 3rem 3rem 3rem;
+  @media only screen and (max-width: 768px) {
+    padding: 0rem 2rem 2rem 2rem;
+  }
+}
+
+.btn {
+  .dropdown-button {
+    background-color: $lightsalmon;
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    border-radius: 10px 20px;
+    // box-shadow: 3px 3px 20px -10px $darkblue;
+    box-shadow: 3px 1px 15px rgba(0, 0, 0, 0.7);
+    :focus {
+      background-color: $lightsalmon;
+    }
+    :active {
+      background-color: $lightsalmon;
+    }
+  }
+}
+
+.btn-secondary.dropdown-button:not(:disabled):not(.disabled):active {
+  background-color: $lightsalmon;
+}
+
+.btn-secondary {
+  .dropdown-toggle {
+    background-color: $lightsalmon;
+  }
+}
+
+.dropdown-container {
+  margin-bottom: 1.5rem;
+}
+
+// Fish Results
+
+.info-box {
+  text-align: left;
+}
+
+.fishCard {
+  width: 75vw;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 3rem;
+  text-align: left;
+  padding: 1rem;
+  border-radius: 30px;
+  margin-bottom: 3rem;
+  // box-shadow: 3px 3px 20px -10px;
+  box-shadow: 3px 1px 15px rgba(0, 0, 0, 0.7);
+}
+
+.fishCardImg {
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+}
+
+.fishCardBody {
+  background-color: white;
+  padding-right: 2.25rem;
+  @media only screen and (max-width: 768px) {
+    padding-right: 0;
+  }
+}
+
+.fishCardBody.card-body {
+  @media only screen and (max-width: 768px) {
+    padding-left: 0.5rem;
+  }
+}
+
+.fishCardBody.card-body ul {
+  @media only screen and (max-width: 768px) {
+    padding-left: 0.3rem;
+  }
+}
+
+#fishCardTitle {
+  margin-bottom: 2rem;
+}
+
+.species-name {
+  font-family: "Poppins", sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  @media only screen and (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+}
+
+.recommendation-callout {
+  background-color: $lightsalmon;
+  padding: 1rem;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.2rem;
+  a {
+    color: white;
+    font-weight: 700;
+  }
+}
+
+.fishSubtitle {
+  font-size: 1.5rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif;
+  @media only screen and (max-width: 768px) {
+    font-size: 1.5rem;
+  }
+}
+
+// Footer
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 3rem;
+  font-family: "Poppins", sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: white;
+  text-align: left;
+  padding-left: 2rem;
+  padding-bottom: 2rem;
+  margin-bottom: 0.5rem;
+  @media only screen and (max-width: 768px) {
+    margin-bottom: 1rem;
+  }
+}
+
+a.footer-link {
+  color: $darkblue;
+}
+
+.footer-text {
+  font-weight: 400;
+}
