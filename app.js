@@ -2,7 +2,7 @@ const express = require("express"); // require express
 const app = express();
 const fs = require("fs");
 
-app.use(express.static(path.join(__dirname, "/client/build")));
+app.use(express.static(path.join(__dirname, "./client/build")));
 
 const seafood = JSON.parse(
   fs.readFileSync(`${__dirname}/dev-data/data/seafood.json`)
