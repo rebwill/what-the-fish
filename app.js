@@ -10,7 +10,7 @@ const seafood = JSON.parse(
 );
 
 // sets up a GET route that we will fetch from within the client side React app
-app.get("/api/", (req, res) => {
+app.get("/seafood", (req, res) => {
   res.status(200).json({
     status: "success",
     seafood
