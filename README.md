@@ -22,5 +22,17 @@ This will let Webpack know to proxy our API requests to our Express backend that
 # START SERVERS
 
 1. In root, run 'nodemon server.js' to start node server
-2. Open new terminal and cd client/. Run 'npm start' to start react dev server.
+2. Open new terminal and cd client_new/. Run 'npm start' to start react dev server.
 3. Open http://localhost:3000/ in browser, all should be running & connected
+
+# DEPLOY
+
+1. git add .
+2. git commit -m "message"
+3. git push heroku master
+
+# PUSH TO GITHUB REPO
+
+1. git add .
+2. git commit -m "message"
+3. git push origin master
