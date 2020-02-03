@@ -46,6 +46,8 @@ const FishResults = ({ fishData }) => {
                 methods and source locations for this fish,{" "}
                 <a
                   href={`https://seafood.ocean.org/seafood/search?keywords=${f["Scientific Name"]}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
                   go here
                 </a>
